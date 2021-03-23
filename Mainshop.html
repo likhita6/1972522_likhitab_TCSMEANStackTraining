@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="shopping.css">
+</head>
+
+<body>
+    <div class="center">
+        <h1 class="page-title"> Shopping Cart </h1>
+    </div>
+    <br/>
+    <br/><br/>
+    <a  href="cart.html" onclick="storeInSession()" style="text-align:right; float: right;"><b>CHECKOUT</b></a></br>
+    <div id="cart">
+        <h2 id="cartSize">Cart Size:</h2>
+    </div>
+</br>
+<div id="a1">
+<legend>Shopping cart</legend>
+</div>
+        <fieldset>
+        
+           
+          <h2>Item:  <img src="https://media.istockphoto.com/photos/tubes-of-toothpaste-in-different-colors-and-different-types-of-picture-id983312054?k=6&m=983312054&s=612x612&w=0&h=ml2HmSuZ2w8_gS4BVYsWjjT8F3D0fAK9LBzOuq9a250=" width= "100" height="100"></h2>
+           <h1 > toothpaste </h1>
+           Value: <p> 6 </p> 
+           
+    
+            <button  id="add1" onclick="incrementValue(this.id)" >add item</button>
+        </fieldset>
+    <fieldset>
+        
+     <h2>Item:  <img src="https://images-gmi-pmc.edge-generalmills.com/087d17eb-500e-4b26-abd1-4f9ffa96a2c6.jpg"  width= "100" height="100"> 
+    </h2>
+    <h1 >cookies </h1> 
+       value: <p>  10 </p>
+
+        <button id="add2" onclick="incrementValue(this.id)">add item</button>
+</fieldset>
+<fieldset>
+        
+  <h2>Item: <img src="https://media.istockphoto.com/photos/assortment-of-fine-chocolate-candies-white-dark-and-milk-chocolate-picture-id1148258027?k=6&m=1148258027&s=612x612&w=0&h=NEiHmrApK8fRuf9ffg_XiJUXozlyi3QgLDgPJlGLuGE="  width= "100" height="100">
+   </h2>
+    <h1 >chocolate </h1>
+    value: <p>  5 </p>
+
+    <button id="add3" onclick="incrementValue(this.id)">add item</button>
+</fieldset>
+<fieldset>
+        
+  <h2>Item:  <img src="https://etimg.etb2bimg.com/photo/71884644.cms"  width= "100" height="100"></h2>
+    <h1 >light </h1>
+    value: <p>  11 </p>
+
+    <button id="add4" onclick="incrementValue(this.id)">add item</button>
+</fieldset>
+          
+    <br/><br/><br/>
+
+    <script src="mainshop.js"></script>

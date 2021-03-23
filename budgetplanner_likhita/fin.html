@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="budgetplanner.css" />
+    <script src="bp.js"></script>
+    </script>
+</head>
+<body onload="passValues()">
+
+  <P>Finance Teams</P>
+  <h>Annual Budget</h>
+  <div >
+  <form>
+  <table id="projectdetails">
+     <thead>
+         <tr>
+             <th>Client Name      </th>
+             <th>          Project Name     </th>
+             <th>Budget</th>
+         </tr>
+     </thead>
+     <tbody id="tbody">
+
+     </tbody>
+  </table>
+</div>
+  </form>
+  <script >
+   function passValues(){
+     var items=JSON.parse(sessionStorage.getItem('projectinfo'));
+     console.log(typeof(items))
+     console.log(items.length)
+      sum=0
+      i = 0
+    
+    while(i<items.length) {
+       var node = document.createElement("tr");
+       var client1=document.createElement("td");
+       client=document.createTextNode(items[i].client);
+       client1.appendChild(client)
+       var project1=document.createElement("td");
+       project=document.createTextNode(items[i].project);
+       project1.appendChild(project)
+       var budget1=document.createElement("td");
+       budget=document.createTextNode(items[i].budget);
+       budget1.appendChild(budget)
+       node.id="id"+i
+      sum+=parseInt(items[i].budget)
+      document.getElementById("tbody").appendChild(node);
+      document.getElementById('id'+i).appendChild(client1)
+      document.getElementById('id'+i).appendChild(project1)
+      document.getElementById('id'+i).appendChild(budget1)
+      i++;
+    }
+     var node = document.createElement("tr");
+     node.id="sum"
+     document.getElementById("tbody").appendChild(node);
+     var client1=document.createElement("td");
+     document.getElementById("sum").appendChild(client1)
+     var project1=document.createElement("td");
+     document.getElementById("sum").appendChild(project1)
+      var budget1=document.createElement("td");
+      budget=document.createTextNode("TotalBudget:"+sum);
+      budget1.appendChild(budget)
+      document.getElementById("sum").appendChild(budget1)
+   }
+   </script>
+   <input type="button" onclick=location.href="bp.html" value="Main Page"/>
+
+</body>
+</html>

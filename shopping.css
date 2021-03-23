@@ -1,0 +1,29 @@
+fieldset
+{
+    background-color:#CCC;
+    max-width:500px;
+    max-height: 500px;
+    padding:16px;	
+}
+.center{
+    color: blueviolet;
+    size: xxlarge;
+    
+    
+}
+h2{
+    color:darkgreen
+
+}
+h1{
+    color: saddlebrown;
+
+}
+.dif{
+    background-color: slateblue;
+    width: 500px;
+    height: 300px;
+}
+p{
+    color: darkorange;
+}
