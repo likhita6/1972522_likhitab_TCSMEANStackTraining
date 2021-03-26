@@ -1,0 +1,23 @@
+<fieldset >
+    <a href="/loginpage"><b style="font-family:verdana">Login page</b></a>
+    <h2 style="color:blue">Registration Form</h2>
+    <p style="color:red">{{msg}} </p>
+    <form [formGroup]="registrationRef" (ngSubmit)="updateUser()">
+        <label><b>First Name:</b></label> 
+        <input type="text" formControlName="fName" /> &nbsp;
+
+        <label><b>Last Name: </b> </label>
+        <input type="text" formControlName="lName" /><br /><br/>
+
+        <label><b>Username:</b></label>
+        <input type="text" formControlName="user" /> &nbsp;
+
+        <label><b>Password: </b></label>
+        <input type="password" formControlName="pass" /><br /><br/><br/>
+
+        <input type="submit" value="Register" /><br/><br/><br/>
+
+        <input type="reset" value="Reset" />
+    </form>
+  
+</fieldset>

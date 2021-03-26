@@ -1,0 +1,11 @@
+<fieldset>
+    <a href="/registrationpage"><b style="font-family:verdana">Register</b></a>
+    <h2 style="color:darkgreen">Login Form</h2>
+    <form [formGroup]="loginRef" (ngSubmit)="checkUser()">
+        <label><i>Username: </i></label>
+        <input type="text" formControlName="user" /><br /><br/>
+        <label><i>Password: </i></label>
+        <input type="password" formControlName="pass" /><br /><br/>
+        <input type="submit" value="Login" />
+    </form>
+</fieldset>

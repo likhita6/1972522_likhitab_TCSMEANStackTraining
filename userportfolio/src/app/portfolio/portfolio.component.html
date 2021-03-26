@@ -1,0 +1,43 @@
+<fieldset>
+<h2 style="color:greenyellow">Portfolio </h2>
+<a href="loginpage"><b style="font-family:verdana">Login</b></a>
+<h5 style="font-family: Arial, Helvetica, sans-serif;">Welcome {{user}}</h5>
+<fieldset>
+    
+    <div>
+         <label> Name: </label>    
+         <input type="text" #name/>          
+    </div><br/>
+    <div>
+       <Label>Phone: </Label>
+       <input type="number" #number>          
+    </div>
+          <br/>
+    <div >
+    <input type="submit"  value="Save" (click)="Contact(name.value,number.value)"/>
+    </div>
+    
+   
+    </fieldset>
+    <hr>
+        <h4 style= "color:darkred "><b><u>Contact Details</u></b></h4>
+    <div>
+        <table id="contactList">
+            <thead>
+                <tr>
+                    <th><b>Name</b></th>
+                    <th><b>Phone </b></th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+</fieldset>
+
+
+
+
+
+
