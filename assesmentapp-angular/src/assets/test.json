@@ -1,0 +1,13 @@
+[
+    {"question":"1.What is software?",
+        "A":"Instructions that tell the hardware what to do","B":"Flexible parts of a computer case","C":"Any part of the computer that has a physical structure","D":"Clothing designed to be worn by computer users","correctAnswer":1},
+    {"question":"2.Which of the following are types of computer hardware?",
+        "A":"windows","B":"Keyboard","C":"applet","D":"chrome","correctAnswer":2},
+    {"question":"3.The computer’s main circuit board is called a ________.",
+        "A":"hard drive","B":"Bluetoothcard","C":"Motherboard","D":"Moniter","correctAnswer":3},
+    {"question":"4.RAM is like a computer’s ________, while a hard drive is like a computer’s ________.",
+        "A":"nervous system/brain","B":"short-term memory/long-term memory","C":"brain/nervous system","D":"long-term memory/short-term memory","correctAnswer":2},
+    {"question":"5.What is an Ethernet port used for?",
+        "A":"Providing power to the computer","B":"Connecting smartphones and other peripherals","C":"Connecting to the Internet","D":"Creating new user accounts","correctAnswer":3}
+   
+]

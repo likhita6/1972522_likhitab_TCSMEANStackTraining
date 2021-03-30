@@ -1,0 +1,31 @@
+<div>
+    <P style="background-color:yellow">Please answer all the questions....If your answer and correct answer are same you will be awarded <b style="color:red">"2"</b> points for each correct answer or else "zero".</P>
+    <div *ngIf="flag">
+       <u color="green"> <b [style.color]="colorCode()" style="text-decoration: solid" style="font-size:la"><i>RESULT: </i>{{total}}/10</b></u>   
+       
+              </div>
+    <div>
+      <div *ngFor="let i of questions"> 
+        <legend class ="ques">{{i.question}}</legend> 
+        <div class="ans" id="{{i.question}}1" name="1">
+            <input id="A" type="radio" name="{{i.question}}" (click)="onSelect(i.question,1);"/>
+            <label for="A">{{i.A}}</label> 
+        </div>
+        <div  class="ans" id="{{i.question}}2" name="2">
+            <input type="radio" name="{{i.question}}" (click)="onSelect(i.question,2);">
+            <label for="B">{{i.B}}</label> 
+        </div>
+        <div  class="ans" id="{{i.question}}3" name="3">
+            <input type="radio" name="{{i.question}}" (click)="onSelect(i.question,3);" >
+            <label for="C">{{i.C}}</label> 
+        </div>
+        <div class="ans" id="{{i.question}}4" name="4">
+            <input type="radio" name="{{i.question}}" (click)="onSelect(i.question,4);">
+            <label for="D">{{i.D}}</label> 
+        </div>
+    </div> 
+    <hr>
+    </div>
+      <input type="submit" value="Submit" (click)="onSubmit()" [disabled]="click"/>
+   
+</div>
