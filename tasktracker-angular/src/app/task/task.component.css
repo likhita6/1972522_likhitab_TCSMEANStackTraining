@@ -1,0 +1,15 @@
+table, th, td {
+    border: 1px solid black;
+    border-spacing: 10px;
+    border-collapse:collapse;
+}
+
+th{
+    background-color:lightgrey;
+    color: darkblue;
+}
+
+td{
+    
+    color: darkred;
+}

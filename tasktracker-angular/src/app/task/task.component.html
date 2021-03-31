@@ -1,0 +1,56 @@
+<div >      
+    <h2 style="font:small" style="color:lightsalmon"> Add the following details.</h2>
+    <form #taskRef="ngForm" (ngSubmit)="storeUser(taskRef.value)" class="text-center">
+        <mat-form-field>
+            <mat-label >ID:</mat-label>
+            <input matInput type="text" name="id" ngModel />
+        </mat-form-field>
+        
+        <br>
+        <mat-form-field>
+            <mat-label >Name</mat-label>
+            <input matInput type="text" name="name" ngModel />
+        </mat-form-field>
+        <br/>
+        <mat-form-field>
+            <mat-label >Task:</mat-label>
+            <input matInput type="text" name="task" ngModel />
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <mat-label>Deadline:</mat-label>
+            <input matInput type="text" name="deadline" ngModel />
+        </mat-form-field>
+        
+        <br>
+        <button mat-stroked-button color="accent"  type="submit">Submit</button>
+    
+        <button mat-stroked-button color="accent"  type="reset">Reset</button>
+        
+    </form>
+  
+</div>
+<hr/>
+
+
+<div >
+    
+    <h1 style="color:blueviolet">EMPLOYEE Details</h1>
+   
+    <table mat-table style="width:70%" >
+        
+        <tr >
+            <th >Id</th>
+            <th>Name</th>
+            <th>Task</th>
+            <th>Deadline</th>
+        </tr>
+        <tr *ngFor="let tb of tasks">
+                <td >{{tb.id}}</td>
+                <td >{{tb.name}}</td>
+                <td >{{tb.task}}</td>
+                <td >{{tb.deadline}}</td>
+        </tr>
+    </table>
+
+</div>
